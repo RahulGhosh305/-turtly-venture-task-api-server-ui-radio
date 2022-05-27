@@ -16,13 +16,6 @@ const RootRoutes = () => {
             <Route path="edit" element={<EditStationScreen />} />
             <Route path="update/:id" element={<UpdateStationScreen />} />
             <Route path="create" element={<CreateStationScreen />} />
-
-            {/* <RegistrationScreen /> */}
-            {/* <RadioScreen /> */}
-            {/* <SettingScreen /> */}
-            {/* <CreateStationScreen /> */}
-            {/* <EditStationScreen /> */}
-            {/* <UpdateStationScreen /> */}
         </Routes>
     );
 };

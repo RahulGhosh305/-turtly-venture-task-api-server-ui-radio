@@ -28,7 +28,7 @@ const UpdateStationScreen = () => {
                 setData(data)
             })
     }, [])
-    console.log(data);
+    // console.log(data);
 
     const onSubmit = values => {
         // console.log(values)
@@ -88,10 +88,10 @@ const UpdateStationScreen = () => {
                             <hr className="bg-white" />
 
                             <form className="mx-2 py-4" onSubmit={handleSubmit(onSubmit)}>
-                                <input type="text" className="form-control mb-2" placeholder='New Channel Name' {...register("name", { required: true })} />
+                                <input type="text" className="form-control mb-2" placeholder='Update Channel Name' {...register("name", { required: true })} />
                                 {errors.name && <span className="text-danger">* Email field is required</span>}
 
-                                <input type="text" className="form-control mb-2" placeholder='Set Frequency' {...register("frequency", { required: true })} />
+                                <input type="text" className="form-control mb-2" placeholder='Update Frequency' {...register("frequency", { required: true })} />
                                 {errors.frequency && <span className="text-danger">* Password field is required</span>}
 
                                 <br />
