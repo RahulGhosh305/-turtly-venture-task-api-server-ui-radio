@@ -33,7 +33,7 @@ const CreateStationScreen = () => {
                 // console.log(data)
                 resetField("name")
                 resetField("frequency")
-                alert(data)
+                alert("Successfully Save Station. Reload Station.")
             })
     };
 

@@ -22,7 +22,7 @@ const UpdateStationScreen = () => {
 
     //### GET/READ ALL RADIO CHANNEL
     useEffect(() => {
-        fetch(`http://localhost:5000/singleChannel/${id}`)
+        fetch(`http://localhost:5000/channel/${id}`)
             .then(res => res.json())
             .then(data => {
                 setData(data)
@@ -32,7 +32,7 @@ const UpdateStationScreen = () => {
 
     const onSubmit = values => {
         // console.log(values)
-        fetch(`http://localhost:5000/update/${id}`, {
+        fetch(`http://localhost:5000/channel/${id}`, {
             method: 'PATCH',
             body: JSON.stringify(values),
             headers: {
@@ -44,7 +44,7 @@ const UpdateStationScreen = () => {
                 // console.log(data)
                 resetField("name")
                 resetField("frequency")
-                alert(data)
+                alert("Update Channel. Reload App.")
             })
     };
 
