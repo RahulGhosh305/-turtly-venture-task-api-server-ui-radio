@@ -1,15 +1,10 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import backArrow from '../../assests/back-arrow.png'
-import power from '../../assests/switch.png'
 
 const arrowStyle = {
     width: "20px",
     height: "50%"
-}
-const powerStyle = {
-    width: '30px',
-    height: '50%'
 }
 const hrStyle = {
     backgroundColor: 'white',
@@ -42,9 +37,6 @@ const Settings = () => {
                                         <img title="Station Settings" style={arrowStyle} src={backArrow} alt="Back Arrow" />
                                     </button>
                                     <h3 >Setting</h3>
-                                    <button style={{ backgroundColor: "transparent", border: "none" }} type="button">
-                                        <img title='Logout' style={powerStyle} src={power} alt="Power Switch" />
-                                    </button>
                                 </div>
                             </h3>
                         </div>
