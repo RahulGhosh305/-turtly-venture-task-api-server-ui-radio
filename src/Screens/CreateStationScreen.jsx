@@ -21,7 +21,7 @@ const CreateStationScreen = () => {
     // POST/CREATE A RADIO CHANNEL
     const onSubmit = values => {
         console.log(values)
-        fetch('http://localhost:5000/channel', {
+        fetch('https://warm-temple-06913.herokuapp.com/channel', {
             method: 'POST',
             body: JSON.stringify(values),
             headers: {

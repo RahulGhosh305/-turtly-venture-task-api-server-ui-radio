@@ -14,7 +14,7 @@ const Body = () => {
 
     //### GET/READ ALL RADIO CHANNEL
     useEffect(() => {
-        fetch("http://localhost:5000/channel")
+        fetch("https://warm-temple-06913.herokuapp.com/channel")
             .then(res => res.json())
             .then(data => {
                 setAppData(data)

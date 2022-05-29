@@ -22,7 +22,7 @@ const UpdateStationScreen = () => {
 
     //### GET/READ ALL RADIO CHANNEL
     useEffect(() => {
-        fetch(`http://localhost:5000/channel/${id}`)
+        fetch(`https://warm-temple-06913.herokuapp.com/channel/${id}`)
             .then(res => res.json())
             .then(data => {
                 setData(data)
@@ -32,7 +32,7 @@ const UpdateStationScreen = () => {
 
     const onSubmit = values => {
         // console.log(values)
-        fetch(`http://localhost:5000/channel/${id}`, {
+        fetch(`https://warm-temple-06913.herokuapp.com/channel/${id}`, {
             method: 'PATCH',
             body: JSON.stringify(values),
             headers: {

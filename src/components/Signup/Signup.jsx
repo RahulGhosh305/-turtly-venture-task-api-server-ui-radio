@@ -34,7 +34,7 @@ const Signup = () => {
         }
 
         try {
-            const url = "http://localhost:5000/auth/register";
+            const url = "https://warm-temple-06913.herokuapp.com/auth/register";
             const { data: res } = await axios.post(url, data);
             // console.log(" Response DATA: ", data)
 

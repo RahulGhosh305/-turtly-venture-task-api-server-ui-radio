@@ -14,7 +14,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const url = "http://localhost:5000/auth/login";
+            const url = "https://warm-temple-06913.herokuapp.com/auth/login";
             const { data: res } = await axios.post(url, data);
             localStorage.setItem("token", res.token);
             if (res.token) window.location = "/";
